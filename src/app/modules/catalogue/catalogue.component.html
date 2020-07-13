@@ -1,0 +1,40 @@
+<div class="container container-fix">
+    <div class="row search-row">
+        <div class="col-md-12">
+            <input type="text" name="search" class="search-box" placeholder="Search here for spicy,garlic,vegies etc. burgers" [(ngModel)]="searchValue"/>
+            <button class="search-btn" (click)="seachItOut()">Search</button>
+            <button class="search-btn" (click)="clearItOut()">clear</button>
+        </div>
+    </div>
+    <div class="row filter-row">
+        <div class="col-md-12">
+            <accordion [isAnimated]="true">
+                <accordion-group heading="Filter out the values " [panelClass]="'customClass'">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="search" class="search-box" placeholder="greater than price..." [(ngModel)]="filterObj.price"/>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="search" class="search-box" placeholder="greater than ratings...." [(ngModel)]="filterObj.ratings"/>
+                            </div>
+                            
+                        </div>
+                        <div class="row filter-btn-row">
+                            <div class="col-md-12 text-center">
+                                <button class="filter-btn" style="width:160px" (click)="filterItOut()">Filter</button>
+                            </div>
+                        </div>
+                    </div>
+                </accordion-group>
+              </accordion>
+        </div>
+    </div>
+    
+    <div class="row items-row">
+        <div class="col-md-4 food-items" *ngFor="let foodItems of food">
+            <app-food-card [data]="foodItems"></app-food-card>
+        </div>
+    </div>
+
+</div>

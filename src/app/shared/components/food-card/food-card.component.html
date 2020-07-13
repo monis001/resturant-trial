@@ -1,0 +1,29 @@
+<div class="flexbox">
+    <div class="food-card"
+    [style.background-image]="'url('+data.image+'?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)'"
+    >
+      <div class="food-card-content">
+        <div class="heading show">
+          <h2>{{data.name}}</h2>
+        <div class="shadow"></div>
+        </div>
+        <div class="heading author show">
+          <h5><a href="javascript:void(0)" class="profile">{{data.tagline}}</a></h5>
+        <div class="shadow"></div>
+        </div>
+        <div class="hover-content">
+          
+        <div class="food-card-properties">
+          <div><i class="fa fa-clock-o"></i><p>{{'' | estimateTime}}</p></div>
+          <div><i class="fa fa-star" style="color:yellow"></i><p>{{data.rating}}</p></div>
+          <div><i class="fa fa-money"></i><p>INR {{data.basePrice}}</p></div>
+        </div>
+          <hr>
+          <div class="content">{{data.description}}<div class="show-less"></div></div>
+          <a href="#"class="view-more">Check out more</a>
+          <a href="#"class="view-more checkout-now">Order now</a>
+        </div>
+      </div>
+    </div>
+  
+  </div>

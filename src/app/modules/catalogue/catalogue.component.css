@@ -1,0 +1,35 @@
+.search-box{
+    width: 70% ;
+    height: 40px;
+    border-radius:7px;
+    border: 1px solid #b4b4b4;
+    padding: 0 5px;
+}
+
+
+.items-row{
+    margin-top: 45px;
+}
+
+.search-btn,.filter-btn{
+    width: 110px;
+      height: 39px;
+      position: relative;
+      margin: 0 5px;
+      border-radius: 5px;
+      border: none;
+      background-color: #FF2F2F;
+      color: white;
+  }
+  
+
+  .filter-row {
+      margin: 15px 0;
+  }
+  .filter-row .col-md-12{
+      padding-left: 0 !important;
+  }
+
+  .filter-btn-row{
+      margin: 25px 0 0 0;
+  }

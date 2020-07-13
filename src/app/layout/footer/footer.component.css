@@ -1,0 +1,42 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  margin-top: 15px;
+  background: #151414;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  z-index: 9999;
+}
+
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
