@@ -13,16 +13,17 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" name="search" class="search-box" placeholder="greater than price..." [(ngModel)]="filterObj.price"/>
+                                <input type="text" name="search" class="search-box" placeholder="greater than and equals to price..." [(ngModel)]="filterObj.price"/>
                             </div>
                             <div class="col-md-6">
-                                <input type="text" name="search" class="search-box" placeholder="greater than ratings...." [(ngModel)]="filterObj.ratings"/>
+                                <input type="text" name="search" class="search-box" placeholder="greater than and equals to ratings...." [(ngModel)]="filterObj.ratings"/>
                             </div>
                             
                         </div>
                         <div class="row filter-btn-row">
                             <div class="col-md-12 text-center">
                                 <button class="filter-btn" style="width:160px" (click)="filterItOut()">Filter</button>
+                                <button class="filter-btn" style="width:160px" (click)="clearFiltersItOut()">clear</button>
                             </div>
                         </div>
                     </div>

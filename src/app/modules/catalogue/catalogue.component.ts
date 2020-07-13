@@ -41,8 +41,15 @@ export class CatalogueComponent implements OnInit {
     this.food = this.catalogueService.getFoodList();
   }
 
+  clearFiltersItOut(){
+   this.clearItOut();
+    this.filterObj.price = null ;
+    this.filterObj.ratings = null ;
+
+  }
+
   filterItOut(){
-    this.food = this.catalogueService.filterOutItems(this.filterObj.price,this.filterObj.ratings);
+    this.food = this.catalogueService.filterOutItems(parseInt(this.filterObj.price),parseFloat(this.filterObj.ratings));
   }
 
 

@@ -37,13 +37,13 @@ export class CatalogueService {
         const objectMapper = {} ;
         const finalItems = []
         this.foodList.forEach((item)=>{
-            if(item.basePrice === price){
-                objectMapper[item.id] = objectMapper[item.id]  ? [item] : [...objectMapper[item.id],item] ;
+            if(item.basePrice >= price){
+                objectMapper[item.id] = objectMapper[item.id] === undefined  ? [item] : [...objectMapper[item.id],item] ;
             }
         });
         this.foodList.forEach((item)=>{
-            if(item.rating === rating){
-                objectMapper[item.id] = objectMapper[item.id]  ? [item] : [...objectMapper[item.id],item] ;
+            if(item.rating >= rating){
+                objectMapper[item.id] = objectMapper[item.id] === undefined ? [item] : [...objectMapper[item.id],item] ;
             }
         });
         Object.keys(objectMapper).forEach((value,key)=>{
